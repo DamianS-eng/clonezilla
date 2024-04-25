@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Clonezilla, a free and open source software for disk/partition imaging and cloning." />
+    <meta name="description" content="Landing Page for Clonezilla software" />
+    <meta name="author" content="DRBL/Clonezilla Team" />
+<!--
+    <meta http-equiv="refresh" content="30" />
+-->
+    <title>Clonezilla - About</title>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <link rel="Clonezilla ICON" type="img/gif" href="./clonezilla_logo_transparent.gif">
+    <meta name="color-scheme" content="light dark" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+		<script>
+		window.addEventListener("load", function(){
+			window.cookieconsent.initialise({
+			"palette": {
+			"popup": {
+			"background": "#edeff5",
+				"text": "#838391"
+				},
+				"button": {
+				"background": "#4b81e8"
+				}
+						},
+						"theme": "edgeless",
+						"position": "bottom-right"
+		})});
+		</script>
+</head>
+<body>
+	<table id="header">
+		<colgroup>
+			<col>
+		</colgroup>
+		<tbody>
+			<tr>
+				<td id="home-logo">
+					<a href="././">
+					<picture>
+						<img src="./clonezilla_logo_transparent.gif" alt="logo" title="back to home page"/>
+					</picture>
+					</a>
+				</td>
+				<td id="site-title">
+					<h1>Clonezilla</h1>
+					<p>The Free and Open Source Software for Disk <a href="https://en.wikipedia.org/wiki/Disk_imaging" target=_blank>Imaging</a> and <a href="https://en.wikipedia.org/wiki/Disk_cloning" target=_blank>Cloning</a></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br />
+	<h2 id="step-by-step">
+		<button id="btn-toc" title="tableofcontents" onclick="toggleMenu(this)">&para;</button>
+		<a href="./clonezilla-live-doc" target="_self">Step-by-step docs</a>
+		<button id="btn-nav" title="navigation" onclick="toggleMenu(this)">►</button>
+	</h2>
+	<hr />
+	<div class="wrapper">
+		<nav id="navigation" open>
+			<menu>
+			<li><a href="././">About</a></a></li>
+			<li><a href="https://sourceforge.net/p/clonezilla/news/" target=_blank>News</a></li>
+			<li><a href="./screenshots/">Screenshots</a></li>
+			<li><a href="./clonezilla-live.php">Live CD/USB</a></li>
+			<li><a href="./clonezilla-usage/clonezilla-live-usage.php">Live Docs</a></li>
+			<li><a href="./clonezilla-SE/">Server Edition</a></li>
+			<li><a href="./downloads.php">Download</a></li>
+			<li><a href="./cd-usb-key-vendors/">CD/USB key vendors</a></li>
+			<li><a href="http://www.drbl-winroll.org" target=_blank>DRBL-winroll</a></li>
+			<li><a href="./related-live-cd/">Related LiveCD</a></li> 
+			<li><a href="./testimonials/">Testimonials</a></li>
+			<li><a href="./lecture-materials/">Lecture Materials</a></li>
+			<li><a href="./related-articles/">Related Articles</a></li>
+			<li><a href="./partners/">Partners</a></li>
+			<li><a href="http://drbl.org/faq/" target=_blank>FAQ/Q&A</a></li>
+			<li><a href="https://sourceforge.net/p/clonezilla/discussion/" target=_blank>Forum</a></li>
+			<li><a href="https://sourceforge.net/p/clonezilla/mailman/" target=_blank>Mailing Lists</a></li>
+			<li><a href="./developers/">Developers</a> </li>
+			<li><a href="./contributors/">Contributors</a> </li>
+			<li><a href="./related-links/">Related links</a> </li>
+			<li><a href="./local-community/">Local communities</a></li>
+			</menu>
+		</nav>
+		<main>
+			<h3 id="about"><font color="#3333ff">What is Clonezilla?</font></h3>
+			<p>Clonezilla is a partition and disk imaging/cloning program similar to <a href="http://en.wikipedia.org/wiki/Acronis_True_Image" target=_blank>True Image&reg;</a> or <a target="_blank" href="http://en.wikipedia.org/wiki/Ghost_%28software%29">Norton Ghost&reg;</a>. It helps you to do system deployment, bare metal backup and recovery.</p>
+			<p>Three types of Clonezilla are available, <ol><li><a href="clonezilla-live.php">Clonezilla live</a>,</li> <li><a href="show-live-doc-content.php?topic=clonezilla-live/doc/11_lite_server" >Clonezilla lite server</a>, and</li> <li><a href="./clonezilla-SE/">Clonezilla SE (server edition)</a>.</li></ol></p> 
+			<p>Clonezilla live is suitable for single machine backup and restore. </p><p>While Clonezilla lite server or SE is for massive deployment, it can clone many (40 plus!) computers simultaneously.</p> <p>Clonezilla saves and restores only used blocks in the hard disk. This increases the clone efficiency. With some high-end hardware in a 42-node cluster, a multicast restoring at rate 8 GB/min was reported.</p><br>
+			<h3 id="features"><font color="#3333ff">Features:</font></h3>
+			<ul>
+				<li>Many File systems are supported: <ol><li>ext2, ext3, ext4, reiserfs, reiser4, xfs, jfs, btrfs, f2fs and nilfs2 of GNU/Linux,</li><li> FAT12, FAT16, FAT32, exFAT and NTFS of MS Windows,</li> <li> HFS+ and APFS of Mac OS,</li><li> UFS of FreeBSD, NetBSD, and OpenBSD,</li> <li>minix of Minix,</li><li> VMFS3 and VMFS5 of VMWare ESX.</li></ol>
+				<br />
+				Therefore you can clone GNU/Linux, MS windows, Intel-based Mac OS, FreeBSD, NetBSD, OpenBSD, Minix, VMWare ESX and Chrome OS/Chromium OS, no matter it's 32-bit (x86) or 64-bit (x86-64) OS. <br />
+				For these file systems, only used blocks in partition are saved and restored by <a href="http://partclone.org" target=_blank>Partclone</a>. For unsupported file system, sector-to-sector copy is done by <a href="https://en.wikipedia.org/wiki/Dd_(Unix)" target=_blank>dd</a> in Clonezilla.
+				<li><font color=red>LVM2</font> (LVM version 1 is not) under GNU/Linux is supported.
+				<li><font color=red>LUKS</font> (Linux Unified Key Setup) is supported.
+				<li>Boot loader, including grub (version 1 and <font color=red>version 2</font>) and syslinux, could be reinstalled.
+				<li>Both <a href="http://en.wikipedia.org/wiki/Master_boot_record" target=_blank>MBR</a> and <a href="http://en.wikipedia.org/wiki/GUID_Partition_Table" target=_blank>GPT</a> partition formats of hard drive are supported. Clonezilla live also can be booted on a <a href="http://en.wikipedia.org/wiki/BIOS" target=_blank>BIOS</a> or <a href="http://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface" target=_blank>uEFI</a> machine.
+				<li>Unattended mode is supported. Almost all steps can be done via commands and options. You can also use <a href="fine-print-live-doc.php?path=clonezilla-live/doc/99_Misc/00_live-boot-parameters.doc">a lot of boot parameters</a> to customize your own imaging and cloning.
+				<li>One image restoring to multiple local devices is supported.
+				<li>Image could be encrypted. This is done with <a href="http://ecryptfs.org/" target=_blank>ecryptfs</a>, a POSIX-compliant enterprise cryptographic stacked filesystem.
+				<li><font color=red>Multicast</font> is supported in Clonezilla SE, which is suitable for massive clone. You can also remotely use it to save or restore a bunch of computers if PXE and Wake-on-LAN are supported in your clients.
+				<li><font color=red>Bittorrent (BT)</font> is supported in Clonezilla lite server, which is suitable for massive deployment. The job for BT mode is done by <a href="https://github.com/tjjh89017/ezio" target=_blank>Ezio</a>.
+				<li>The image file can be on local disk, ssh server, samba server, NFS server or <a href="http://en.wikipedia.org/wiki/WebDAV" target=_blank>WebDAV</a> server.
+				<li>AES-256 encryption could be used to secures data access, storage and transfer.
+				<li>Based on <a href="http://partclone.org" target=_blank>Partclone</a> (default), <a href="http://www.partimage.org" target=_blank> Partimage</a> (optional), <a href="http://jp-andre.pagesperso-orange.fr/advanced-ntfs-3g.html" target=_blank>ntfsclone</a> (optional), or dd to image or clone a partition. However, Clonezilla, containing some other programs, can save and restore not only partitions, but also a whole disk.
+				<li>By using another free software <a href="http://drbl-winroll.sourceforge.net/">drbl-winroll</a>, which is also developed by us, the hostname, group, and SID of cloned MS windows machine can be automatically changed.
+			</ul>
+			<h3 id="minimum"><font color="#3333ff">Minimum System Requirements for Clonezilla live:</font></h3>
+			<ul>
+			<li>X86 or x86-64 processor
+			<li>196 MB of system memory (RAM)
+			<li>Boot device, e.g. CD/DVD Drive, USB port, PXE, or hard drive
+			</ul>
+			<h3 id="limitations"><font color="#3333ff">Limitations:</font></h3>
+			<ul>
+				<li>The destination partition must be equal or larger than the source one.
+				<li>Differential/incremental backup is not implemented yet.
+				<li>Online imaging/cloning is not implemented yet. The partition to be imaged or cloned has to be unmounted.
+				<li>Due to the image format limitation, the image can not be explored or mounted. You can _NOT_ recovery single file from the image. However, you still have workaround to make it, read <a href="http://drbl.org/faq/fine-print.php?path=./2_System/43_read_ntfsimg_content.faq#43_read_ntfsimg_content.faq" target=_blank>this</a>.
+				<li>Recovery Clonezilla live with multiple CDs or DVDs is not implemented yet. Now all the files have to be in one CD or DVD if you choose to create the recovery iso file.
+			</ul>
+			<h3 id="which"><font color="#3333ff">Which Clonezilla Shall I Use ?</font></h3>
+			<ul>
+				<li><a href="clonezilla-live.php">Clonezilla Live</a>: Clonezilla live allows you to use CD/DVD or USB flash drive to boot and run clonezilla (Unicast only)</li>
+				<li><a href="show-live-doc-content.php?topic=clonezilla-live/doc/11_lite_server">Clonezilla lite server</a>: Clonezilla lite server allows you to use Clonezilla live to do massively cloning (unicast, broadcast, multicast, bittorrent are supported)
+				<li><a href="./clonezilla-SE/">Clonezilla SE</a>: Clonezilla SE is included in DRBL, therefore a DRBL server must first be set up in order to use Clonezilla to do massively cloning (unicast, broadcast and multicast are supported)
+			</ul>
+		</main>
+		<nav id="tableofcontents" alt="toc">
+			<ol>
+				<a href="#about"><li>What is Clonezilla?</li></a>
+				<a href="#features"><li>Features</li></a>
+				<a href="#minimum"><li>Minimum System Requirements</li></a>
+				<a href="#limitations"><li>Limitations</li></a>
+				<a href="#which"><li>Which Clonezilla Should I Use?</li></a>
+			</ol>
+		</nav>
+	</div>
+	<footer>
+	</footer>
+	<script src="./index.js" defer> </script>
+</body>
+</html>
